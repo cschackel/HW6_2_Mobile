@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Page2"
+             x:Class="HW6_2.Page2">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="ColorA">Black</Color>
+            <Color x:Key="ColorB">White</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <BoxView
+                Grid.Row="0" Grid.Column="0"
+                BackgroundColor="{StaticResource ColorA}"/>
+
+
+            <BoxView Color="{StaticResource ColorB}"
+                 Grid.Row="0" Grid.Column="1" />
+
+            <BoxView
+                Grid.Row="0" Grid.Column="2"
+                BackgroundColor="{StaticResource ColorA}"/>
+
+            <BoxView Color="{StaticResource ColorB}"
+                 Grid.Row="0" Grid.Column="1" />
+
+            <BoxView
+                Grid.Row="1" Grid.Column="0"
+                BackgroundColor="{StaticResource ColorB}"/>
+
+            <BoxView Color="{StaticResource ColorA}"
+                 Grid.Row="1" Grid.Column="1" />
+
+            <BoxView
+                Grid.Row="1" Grid.Column="2"
+                BackgroundColor="{StaticResource ColorB}"/>
+
+            <BoxView
+                Grid.Row="2" Grid.Column="0"
+                BackgroundColor="{StaticResource ColorA}"/>
+
+
+            <BoxView Color="{StaticResource ColorB}"
+                 Grid.Row="2" Grid.Column="1" />
+
+            <BoxView
+                Grid.Row="2" Grid.Column="2"
+                BackgroundColor="{StaticResource ColorA}"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
